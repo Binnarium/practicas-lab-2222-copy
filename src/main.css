@@ -8,16 +8,56 @@ body {
 }
 /* PARTE 1*/
 
-#cabecera {
+#section_1_cabecera {
     display: flex;
-
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin: 10px;
 }
 
+.imagenes_cabecera {
+width: 50%;
+overflow: hidden;
+
+}
 
 .contenido_cabecera {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+width: 50%;
+display: grid;
+grid-template-columns: repeat( 2 , 50%);
+grid-template-rows: repeat( 5 , 20%);
+
 }
+
+.introduccion {
+grid-area: header;
+}
+
+.elementos_cabecera_1 {
+grid-area: left_up;
+}
+
+.elementos_cabecera_2 {
+grid-area: left_down;
+}
+
+.elementos_cabecera_3 {
+grid-area: rigth_up;
+}
+
+.elementos_cabecera_4 {
+grid-area: rigth_down;
+            
+}
+
+.boton {
+
+
+}
+
+
 
 .boton button {
     padding: 10px 20px;
@@ -33,7 +73,7 @@ body {
 /* PARTE 2*/ 
 
 #viaje {
-    background: rgb(249, 204, 84);
+    background:yellow;
     width: 100%;
 }
 
@@ -72,4 +112,22 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+/*Parte 3*/
+
+/*Parte 4*/
+
+/*Parte 5*/
+
+/*Parte 6*/
+
+/*Parte 7*/
+
+/*Parte 8*/
+
+/*Parte 9*/
+
+/*Parte 10*/
+
+/*Parte 11*/
+
 
