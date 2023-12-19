@@ -1,65 +1,75 @@
 body {
-    background: whitesmoke;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-#contenido {
-    position: relative;
-    width: 1500px;
-    margin: 0px auto;
-    padding: 10px;
-    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
 
 }
+/* PARTE 1*/
 
-header {
-    position: relative; 
-    left: 700px;
+#cabecera {
+    display: flex;
+
 }
 
-#primera_columna {
-    position: relative; 
-    left: 700px;
+
+.contenido_cabecera {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#segunda_columna {
-    position: relative; 
-    left: 1100px;
-    bottom: 300px;
+.boton button {
+    padding: 10px 20px;
+    font-size: 16px; 
+    color: white; 
+    background-color: red; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    height: 10%;
+    width: 100%;
+}
+/* PARTE 2*/ 
+
+#viaje {
+    background: rgb(249, 204, 84);
+    width: 100%;
 }
 
-#logo_g {
-    position: absolute;
-    left: 10px;
-    bottom: 0px;
-    top: auto;
-   
+#indicaciones {
+    background: white
 }
 
-#imagen_grande {
-    width: auto;
-    height: 100%;
-}
-
-#logo_r {
-    position: absolute;
-    left: 10px;
-    bottom: auto;
-    top: 0px; 
-}
-#logo_rojo{
-    width: auto;
-    max-height: 150px;
+.texto {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
     
 }
 
-button {
-    position: absolute;
-    right: 20px;
-    bottom: 250px;
-    padding: 10px;
-    padding-left: 400px;
-    padding-right: 400px;
-    color: white;
-    background: red;
+.imagen {
+    max-width: 90%;
+    display: ;
+    
 }
+
+.container {
+
+    margin-inline: auto;
+    max-width: 960px;
+    width: 100%;
+    padding-inline: 16px;
+}
+
+.columnas {
+    display: flex;
+    gap: 20px;
+}
+
+.grid_3_columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
