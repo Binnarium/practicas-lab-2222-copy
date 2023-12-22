@@ -27,7 +27,13 @@ overflow: hidden;
 width: 50%;
 display: grid;
 grid-template-columns: repeat( 2 , 50%);
-grid-template-rows: repeat( 5 , 20%);
+grid-template-rows: repeat( 5 , 250px);
+grid-template-areas: 
+    "header header"
+    "left_up rigth_up"
+    "left_down rigth_down"
+    "button_foot button_foot"
+;
 
 }
 
@@ -52,14 +58,11 @@ grid-area: rigth_down;
             
 }
 
-.boton {
-
+.acciones {
+    grid-area: button_foot;
 
 }
-
-
-
-.boton button {
+.boton {
     padding: 10px 20px;
     font-size: 16px; 
     color: white; 
@@ -67,14 +70,16 @@ grid-area: rigth_down;
     border: none; 
     border-radius: 5px; 
     cursor: pointer;
-    height: 10%;
     width: 100%;
+    
 }
-/* PARTE 2*/ 
+/* PARTE 2 y 3*/ 
 
-#viaje {
-    background:yellow;
+#section_2_viaje{
+    background:#F9CC54;
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #indicaciones {
@@ -112,10 +117,40 @@ grid-area: rigth_down;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-/*Parte 3*/
+
 
 /*Parte 4*/
 
+#section_4_requisitos_beneficios {
+    background-color: #C43632;
+    flex-direction: column;
+}
+
+.logos {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.videos {
+    flex-direction: column;
+}
+
+
+
+.requisitos {
+display: flex;
+gap: 40px;
+justify-content: center;
+border: 1px solid black;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+.foot_section_3 {
+
+}
 /*Parte 5*/
 
 /*Parte 6*/
@@ -129,5 +164,7 @@ grid-area: rigth_down;
 /*Parte 10*/
 
 /*Parte 11*/
+
+
 
 
