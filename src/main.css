@@ -124,6 +124,27 @@ grid-area: rigth_down;
 #section_4_requisitos_beneficios {
     background-color: #C43632;
     flex-direction: column;
+
+}
+ 
+.titulo_section_4 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.nombre_logos {
+    color: aliceblue;
+    text-align: center;
+}
+
+.titulo_requisitos {
+    color: #C43632;
+    text-align: center;
+
+}
+
+.contenido_requisito {
+    text-align: center;
 }
 
 .logos {
@@ -136,22 +157,77 @@ grid-area: rigth_down;
     flex-direction: column;
 }
 
+.articulo_re_inv {
+    flex: 1;
+} 
 
+.articulo_re_dur {
+    flex: 1;
+}
+
+.articulo_re_mat {
+    flex: 1;
+}
+
+.articulo_re_acre {
+    flex: 1;
+}
 
 .requisitos {
-display: flex;
-gap: 40px;
-justify-content: center;
-border: 1px solid black;
-padding: 10px;
-background-color: white;
-border-radius: 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
 }
 
-.foot_section_3 {
-
+.boton_inferior_4 {
+    padding: 10px 20px;
+    font-size: 16px; 
+    color: white; 
+    background-color: #F9CC54; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    width: 100%;
+    color: #C43632;
+    text-align: center;
 }
+.bot_inf_black {
+    color: black;
+}
+
+
 /*Parte 5*/
+
+#section_5_pasos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.img_section_5 {
+    width: 50%;
+    background-size: cover;
+}
+
+.pasos_viaje { 
+    width: 50%;
+}
+
+.num_pasos {
+    border-radius: 100%;
+    background-color: #f1edec;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 /*Parte 6*/
 
