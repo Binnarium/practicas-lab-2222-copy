@@ -215,6 +215,16 @@ grid-area: rigth_down;
 
 .pasos_viaje { 
     width: 50%;
+    display: grid;
+    grid-template-columns: repeat( 4, 25%) ;
+    grid-template-rows: repeat(5, 20%);
+    grid-template-areas: 
+    "header header header header"
+    "first first second second"
+    "third third fourth fourth"
+    "logo message message message"
+    ". button .";
+    
 }
 
 .num_pasos {
@@ -226,6 +236,53 @@ grid-area: rigth_down;
     justify-content: center;
     align-items: center;
 
+}
+
+.head_5 {
+    width: auto;
+    height: auto;
+    grid-area: header;
+    background-color: #C43632;
+}
+
+.primero {
+    grid-area: first;
+    background-color: #C43632;
+}
+
+.segundo {
+    grid-area: second;
+    background-color: #C43632;
+}
+
+.tercero {
+    grid-area: third;
+    background-color: #C43632;
+}
+
+.cuarto {
+    grid-area: fourth;
+    background-color: #C43632;
+}
+
+.liston_logo {
+    grid-area: logo;
+    background-color: #C43632;
+}
+
+.mensaje_premio {
+    grid-area: message;
+    background-color: #C43632;
+}
+
+.boton_aventura {
+    grid-area: button;
+    background-color: #C43632;
+}
+*/
+
+.subtitulo_pasos {
+    color: #F9CC54;
 }
 
 
