@@ -216,15 +216,15 @@ grid-area: rigth_down;
 .pasos_viaje { 
     width: 50%;
     display: grid;
-    grid-template-columns: repeat( 4, 25%) ;
-    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: repeat( 4, 1fr) ;
+    /* grid-template-rows: repeat(5, auto); */
+    grid-auto-rows: min-content;
     grid-template-areas: 
     "header header header header"
     "first first second second"
     "third third fourth fourth"
     "logo message message message"
-    ". button .";
-    
+    ". button button .";
 }
 
 .num_pasos {
