@@ -183,18 +183,31 @@ grid-area: rigth_down;
     border-radius: 10px;
 }
 
-.boton_inferior_4 {
+.boton_4 {
     padding: 10px 20px;
     font-size: 16px; 
-    color: white; 
-    background-color: #F9CC54; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer;
     width: 100%;
-    color: #C43632;
     text-align: center;
+    background-color: #F9CC54;
+    color: white; 
+    cursor: pointer;
+    color: #C43632;
+    border: 2px solid black;
+    border-radius: 0px;
+    display: inline-block;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 0 0 #F9CC54;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+ 
 }
+
+.inferior_4:hover{
+    box-shadow: inset 0 0 0 50px white;
+}
+
+
 .bot_inf_black {
     color: black;
 }
@@ -218,7 +231,6 @@ grid-area: rigth_down;
     width: 50%;
     display: grid;
     grid-template-columns: repeat( 4, 1fr) ;
-    /* grid-template-rows: repeat(5, auto); */
     grid-auto-rows: min-content;
     grid-template-areas: 
     "header header header header"
@@ -280,14 +292,26 @@ grid-area: rigth_down;
 
 .boton_aventura {
     grid-area: button;
-    padding: 10px 20px;
-    font-size: 16px;   
-    border: none; 
-    border-radius: 5px; 
+    color: #FFF;
+    border: 2px solid white;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
     cursor: pointer;
-    width: 100%;
+    box-shadow: inset 0 0 0 0 white;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
     text-align: center;
 }
+
+.aven_but:hover {
+    box-shadow: inset 0 0 0 50px #F9CC54;
+}
+
 
 .num_sub {
     color: #F9CC54;
