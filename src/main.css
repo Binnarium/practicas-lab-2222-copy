@@ -206,6 +206,7 @@ grid-area: rigth_down;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    background-color: rgb(33, 33, 33);
 }
 
 .img_section_5 {
@@ -223,7 +224,7 @@ grid-area: rigth_down;
     "first first second second"
     "third third fourth fourth"
     "logo message message message"
-    ". button .";
+    ". button button .";
     
 }
 
@@ -235,6 +236,7 @@ grid-area: rigth_down;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000;
 
 }
 
@@ -242,48 +244,54 @@ grid-area: rigth_down;
     width: auto;
     height: auto;
     grid-area: header;
-    background-color: #C43632;
+    color: #f1edec;
 }
 
 .primero {
     grid-area: first;
-    background-color: #C43632;
+    color: #f1edec
 }
 
 .segundo {
     grid-area: second;
-    background-color: #C43632;
+    color: #f1edec
 }
 
 .tercero {
     grid-area: third;
-    background-color: #C43632;
+    color: #f1edec
 }
 
 .cuarto {
     grid-area: fourth;
-    background-color: #C43632;
+    color: #f1edec
 }
 
 .liston_logo {
     grid-area: logo;
-    background-color: #C43632;
+    color: #f1edec
 }
 
 .mensaje_premio {
     grid-area: message;
-    background-color: #C43632;
+    color: #f1edec
 }
 
 .boton_aventura {
     grid-area: button;
-    background-color: #C43632;
+    padding: 10px 20px;
+    font-size: 16px;   
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
 }
-*/
 
-.subtitulo_pasos {
+.num_sub {
     color: #F9CC54;
 }
+
 
 
 /*Parte 6*/
