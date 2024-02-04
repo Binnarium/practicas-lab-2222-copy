@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     max-width: 100%;
     border: none;
     margin: 0;
@@ -14,25 +14,27 @@ body {
     flex-wrap: nowrap;
     padding: 10px;
     margin: 10px;
+    width:auto;
+    height:auto;
 }
 
 .imagenes_cabecera {
-width: 50%;
-overflow: hidden;
+    width: 50%;
+    overflow: visible;
 
 }
 
 .contenido_cabecera {
 
-width: 50%;
-display: grid;
-grid-template-columns: repeat( 2 , 50%);
-grid-template-rows: repeat( 5 , 250px);
-grid-template-areas: 
-    "header header"
-    "left_up rigth_up"
-    "left_down rigth_down"
-    "button_foot button_foot"
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat( 2 , 50%);
+    grid-template-rows: repeat( 4 , 250px);
+    grid-template-areas: 
+        "header header"
+        "left_up rigth_up"
+        "left_down rigth_down"
+        "button_foot button_foot"
 ;
 
 }
@@ -58,21 +60,33 @@ grid-area: rigth_down;
             
 }
 
-.acciones {
-    grid-area: button_foot;
-
-}
-.boton {
+.button_matriculate {
     padding: 10px 20px;
     font-size: 16px; 
+    width: auto;
+    text-align: center;
+    background-color: #C43632 ;
     color: white; 
-    background-color: red; 
-    border: none; 
-    border-radius: 5px; 
     cursor: pointer;
-    width: 100%;
-    
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 0 0 #b64f4b;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    grid-area: button_foot;
+    justify-self: stretch;
+    align-self: center;
 }
+
+.mat_but:hover {
+    box-shadow: inset 0 0 0 50px white;
+    color: #C43632;
+}
+
+
 /* PARTE 2 y 3*/ 
 
 #section_2_viaje{
@@ -186,7 +200,7 @@ grid-area: rigth_down;
 .boton_4 {
     padding: 10px 20px;
     font-size: 16px; 
-    width: 100%;
+    width:-webkit-fill-available;
     text-align: center;
     background-color: #F9CC54;
     color: white; 
@@ -318,8 +332,19 @@ grid-area: rigth_down;
 }
 
 
-
 /*Parte 6*/
+
+#section_6_sabiduria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.foto_kawai {
+    
+}
+
+
 
 /*Parte 7*/
 
