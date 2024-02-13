@@ -427,27 +427,50 @@ grid-area: rigth_down;
 
 #section_7_ofrecimiento {
     background-color: #F9CC54;
-}
-
-.ofrecimiento_viaje {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 20px;
 }
 
-.caja_roja{
-    flex: 1;
+.ofrece_cuadro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content;
+    grid-template-areas: 
+        "encabezado encabezado"
+        "contenido caja";
+}
+
+
+.titulo_rojo{
+    color: #C43632;
+    grid-area: encabezado;
 }
 
 .viaje_ofrece{
-    flex: 1;
+    grid-area: contenido;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.caja_roja{
+    grid-area: caja;
+    background-color: #C43632;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
 }
 
 .boton_ofrecimiento {
+    align-self: center;
+    width: 50%;
     grid-area: button;
-    color: #FFF;
-    border: 2px solid white;
+    color: black;
+    border: 2px solid black;
     border-radius: 0px;
     padding: 18px 36px;
     display: inline-block;
@@ -463,11 +486,14 @@ grid-area: rigth_down;
 }
 
 .ofrec_but:hover {
-    box-shadow: inset 0 0 0 50px #F9CC54;
+    box-shadow: inset 0 0 0 50px #C43632;
 }
 
 
+
 /*Parte 8*/
+
+
 
 /*Parte 9*/
 
