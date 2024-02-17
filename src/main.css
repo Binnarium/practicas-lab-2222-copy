@@ -437,8 +437,8 @@ grid-area: rigth_down;
 
 .ofrece_cuadro{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: min-content;
+    grid-template-columns: [colum1] 75% [colum2] 25%;
+    grid-template-rows: [row1] 20% [row2] 80%;
     grid-template-areas: 
         "encabezado encabezado"
         "contenido caja";
@@ -453,11 +453,11 @@ grid-area: rigth_down;
 .viaje_ofrece{
     grid-area: contenido;
     text-align: justify;
-    padding-left: 20px;
     padding-right: 20px;
 }
 
 .caja_roja{
+    color: #f1edec;
     grid-area: caja;
     background-color: #C43632;
     padding-left: 20px;
@@ -493,9 +493,41 @@ grid-area: rigth_down;
 
 /*Parte 8*/
 
+#section_8_equipo {
+
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.imagen_heroe {
+    background-color: #C43632;
+    padding: 20px;
+}
+
+.ruta_autoaprendizaje {
+    
+}
+
+.titulo_ruta {
+    color: #C43632;
+}
+
 
 
 /*Parte 9*/
+
+#section_9_matriculate {
+    
+}
+
+.grid_matri {
+    display: flex;
+}
+
+
 
 /*Parte 10*/
 
