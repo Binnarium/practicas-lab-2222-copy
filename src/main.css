@@ -521,6 +521,11 @@ grid-area: rigth_down;
 
 #section_9_matriculate {
     background-color: #C43632;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-top: solid black;
+    border-bottom: solid black;
 }
 
 .grid_matri {
@@ -530,33 +535,51 @@ grid-area: rigth_down;
 
 .mensaje_promocional {
     color: #f1edec;
+    padding: 20px;
+    text-align: justify;
+}
+
+.img_matri{
+    height: 200px;
+    width: 200px;
 }
 
 .matriculate_2{
+
     grid-area: button;
-    color: black;
+    color: white;
     border: 2px solid black;
     border-radius: 0px;
-    padding: 18px 36px;
+    padding: 18px 120px;
     display: inline-block;
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 14px;
     letter-spacing: 1px;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 yellow;
+    box-shadow: inset 0 0 0 0 white;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
     text-align: center;
+    align-self: center;
+    
 }
 
 .matri_boton:hover {
-    box-shadow: inset 0 0 0 50px #C43632;
+    color: #000;
+    box-shadow: inset 0 0 0 50px white;
 }
 
 
-
 /*Parte 10*/
+
+#section_10_patrocinadores {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+    
+}
 
 /*Parte 11*/
 
