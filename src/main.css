@@ -578,11 +578,46 @@ grid-area: rigth_down;
     flex-direction: row;
     gap: 30px;
     padding: 20px;
-    
+    display: flex;
+    flex-direction: column;
+    height: 308px;
+    margin-left: 192px;
 }
 
 /*Parte 11*/
 
+#section_11_redes {
+    height: 225px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    background-color: #000;
+    color: #f1edec;
+    padding-left: 192px;
+}
 
+.form {
+    gap: 10px;
+}
+ .Enviar_Form {
+    grid-area: button;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0px;
+    padding: 18px 36px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 white;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+ }
+
+ .form_but:hover {
+    color: black;
+    box-shadow: inset 0 0 0 50px white;
+ }
 
 
